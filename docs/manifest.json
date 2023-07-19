@@ -1,0 +1,10 @@
+{
+  "name": "sport-diary-helpers",
+  "short_name": "sport-diary",
+  "start_url": "/",
+  "scope": "/",
+  "icons": [],
+  "theme_color": "#fff19f",
+  "background_color": "#fff19f",
+  "display": "standalone"
+}
