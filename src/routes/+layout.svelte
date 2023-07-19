@@ -1,6 +1,7 @@
 <script lang="ts">
     import '../app.css';
     import { goto } from '$app/navigation';
+    import { base } from '$app/paths';
     let menuOpen = false;
 </script>
 
@@ -20,7 +21,7 @@
   </div>
   {#if menuOpen}
     <div class="space-y-4 mt-6 lg:hidden">
-      <a href="/" class="block text-gray-200 text-lg">
+      <a href="{base}/" class="block text-gray-200 text-lg">
         Home
       </a>
       <button on:click={() => { menuOpen = false; goto('/bouldering'); }} class="block text-gray-200 text-lg">
@@ -32,7 +33,7 @@
     </div>
   {/if}
   <div class="space-y-0 flex lg:justify-between lg:items-center mt-6 hidden lg:flex">
-    <a href="/" class="text-gray-200 text-lg lg:mr-4">
+    <a href="{base}/" class="text-gray-200 text-lg lg:mr-4">
       Home
     </a>
     <button on:click={() => goto('/bouldering')} class="text-gray-200 text-lg lg:mr-4">
