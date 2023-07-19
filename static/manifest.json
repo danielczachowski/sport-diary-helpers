@@ -1,0 +1,10 @@
+{
+  "name": "AmbienZZZzz",
+  "short_name": "AmbienZZZzz",
+  "start_url": "/",
+  "scope": "/",
+  "icons": [],
+  "theme_color": "#fff19f",
+  "background_color": "#fff19f",
+  "display": "standalone"
+}
