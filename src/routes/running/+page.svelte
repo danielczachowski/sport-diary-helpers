@@ -22,7 +22,9 @@
     function generateOutput() {
       const time = `${(runHours*60 + runMinutes + (runSeconds/60)).toFixed(1)}`;
       const pace = (+time / kms).toFixed(2);
-      output = `${formatDate(date)} |${routeNumber}| ${kms}km, ${formatTime(runHours)}:${formatTime(runMinutes)}:${formatTime(runSeconds)}, ${pace} min/km, RPE: ${rpe}, ${avgHR}HR`; 
+      const paceMin = (Math.floor(+pace)).toFixed();
+      const paceSeconds = Math.round(60 * (+pace % 1));
+      output = `${formatDate(date)} |${routeNumber}| ${kms}km, ${formatTime(runHours)}:${formatTime(runMinutes)}:${formatTime(runSeconds)}, ${paceMin}:${paceSeconds} min/km, RPE: ${rpe}, ${avgHR}HR`; 
       isOutputGenerated = true;
     } 
 
