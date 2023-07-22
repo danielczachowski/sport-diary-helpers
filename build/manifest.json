@@ -1,4 +1,5 @@
 {
+  "base": "/env",
   "name": "sport-diary-helpers",
   "short_name": "sport-diary",
   "start_url": "/",
